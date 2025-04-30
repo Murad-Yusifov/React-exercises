@@ -2,7 +2,7 @@ import ProductModel from '../models/productModel.js'
 
 const getProducts = async (req, res)=>{
     const products = await ProductModel.find()
-    res.status(200).json(products)
+    res.json(products)
 }
 
 const postProducts = async (req, res)=>{
